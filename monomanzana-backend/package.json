@@ -1,0 +1,29 @@
+{
+  "name": "monomanzana-backend",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start":      "node src/app.js",
+    "dev":        "nodemon src/app.js",
+    "db:setup":   "node database/setup.js",
+    "db:migrate": "node database/migrate.js",
+    "db:seed":    "node database/seed.js",
+    "test":       "node --test tests/funcional/caja.test.js tests/funcional/ventas.test.js tests/funcional/servicio.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
